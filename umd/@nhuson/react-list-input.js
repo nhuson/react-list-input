@@ -7870,8 +7870,7 @@ var ListInput = (_class = (_temp = _class2 = function (_React$Component) {
 
     return __WEBPACK_IMPORTED_MODULE_11_react___default.a.createElement(
       'div',
-      {
-        __source: {
+      { className: 'list-input-react', __source: {
           fileName: _jsxFileName,
           lineNumber: 201
         },

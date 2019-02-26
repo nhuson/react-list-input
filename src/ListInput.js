@@ -198,7 +198,7 @@ class ListInput extends React.Component {
     }
 
     return (
-      <div>
+      <div className="list-input-react">
         { value.length < maxItems &&
           <StagingComponent
             onAdd={addFromStaging}

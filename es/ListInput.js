@@ -251,7 +251,7 @@ var ListInput = (_class = (_temp = _class2 = function (_React$Component) {
 
     return React.createElement(
       'div',
-      null,
+      { className: 'list-input-react' },
       value.length < maxItems && React.createElement(StagingComponent, {
         onAdd: addFromStaging,
         canAdd: this.state.value.length < maxItems && !_equals(this.state.stagedValue, initialStagingValue),
