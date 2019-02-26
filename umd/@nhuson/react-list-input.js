@@ -1,5 +1,5 @@
 /*!
- * @nhuson/react-list-input v1.2.5
+ * @nhuson/react-list-input v1.2.6
  * ISC Licensed
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -7811,7 +7811,9 @@ var ListInput = (_class = (_temp = _class2 = function (_React$Component) {
           onRemove = _ref2.onRemove;
 
       var removable = _this2.props.value.length > (_this2.props.minItems || 0);
-      var index = _this2.findWithSameKey(value);
+      var index = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_12_lodash__["invert"])(_this2.state.value.map(function (sVal) {
+        return sVal.value;
+      }));
       return __WEBPACK_IMPORTED_MODULE_11_react___default.a.createElement(ItemComponent, _extends({
         ItemComponent: ItemComponent,
         decorateHandle: decorateHandle,
@@ -7936,7 +7938,7 @@ function idMaker() {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
-          index = 1;
+          index = 0;
 
         case 1:
           if (false) {

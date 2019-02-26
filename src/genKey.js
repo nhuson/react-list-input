@@ -1,5 +1,5 @@
 function* idMaker () {
-  let index = 1
+  let index = 0
   while (true) yield index++
 }
 
