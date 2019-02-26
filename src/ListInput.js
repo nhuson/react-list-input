@@ -143,8 +143,7 @@ class ListInput extends React.Component {
   makeItemComponentWrapper ({ItemComponent, minItems}) {
     return ({value, onChange, decorateHandle, onRemove}) => {
       const removable = this.props.value.length > (this.props.minItems || 0)
-      let item = invert(this.props.value)
-      console.log('form son', item, '====')
+      console.log(this.props.value, '===ssssss')
       return (
         <ItemComponent
           {...{
@@ -156,7 +155,6 @@ class ListInput extends React.Component {
           onChange={onChange}
           value={value}
           onRemove={removable ? onRemove : R.identity}
-          item={item}
         />
       )
     }
