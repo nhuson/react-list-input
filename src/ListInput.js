@@ -2,8 +2,7 @@ import R from 'ramda'
 import autobind from 'autobind-decorator'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { debounce } from 'lodash'
-
+import { debounce, invert } from 'lodash'
 import genKey from './genKey'
 import Sortable from 'react-drag-sort'
 
@@ -144,6 +143,7 @@ class ListInput extends React.Component {
   makeItemComponentWrapper ({ItemComponent, minItems}) {
     return ({value, onChange, decorateHandle, onRemove}) => {
       const removable = this.props.value.length > (this.props.minItems || 0)
+      const item = invert(this.props.value)
       return (
         <ItemComponent
           {...{
@@ -155,6 +155,7 @@ class ListInput extends React.Component {
           onChange={onChange}
           value={value}
           onRemove={removable ? onRemove : R.identity}
+          item={item}
         />
       )
     }

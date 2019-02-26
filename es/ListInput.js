@@ -50,8 +50,7 @@ function _applyDecoratedDescriptor(target, property, decorators, descriptor, con
 import autobind from 'autobind-decorator';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { debounce } from 'lodash';
-
+import { debounce, invert } from 'lodash';
 import genKey from './genKey';
 import Sortable from 'react-drag-sort';
 
@@ -198,6 +197,7 @@ var ListInput = (_class = (_temp = _class2 = function (_React$Component) {
           onRemove = _ref2.onRemove;
 
       var removable = _this2.props.value.length > (_this2.props.minItems || 0);
+      var item = invert(_this2.props.value);
       return React.createElement(ItemComponent, _extends({
         ItemComponent: ItemComponent,
         decorateHandle: decorateHandle,
@@ -206,7 +206,8 @@ var ListInput = (_class = (_temp = _class2 = function (_React$Component) {
         removable: removable,
         onChange: onChange,
         value: value,
-        onRemove: removable ? onRemove : _identity
+        onRemove: removable ? onRemove : _identity,
+        item: item
       }));
     };
   };
