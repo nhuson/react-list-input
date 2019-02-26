@@ -1,5 +1,5 @@
 /*!
- * @nhuson/react-list-input v1.2.0
+ * @nhuson/react-list-input v1.2.1
  * ISC Licensed
  */
 (function webpackUniversalModuleDefinition(root, factory) {
