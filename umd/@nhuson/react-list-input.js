@@ -7811,7 +7811,7 @@ var ListInput = (_class = (_temp = _class2 = function (_React$Component) {
           onRemove = _ref2.onRemove;
 
       var removable = _this2.props.value.length > (_this2.props.minItems || 0);
-      var item = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_12_lodash__["invert"])(_this2.state.value);
+      var index = _this2.findWithSameKey(value);
       return __WEBPACK_IMPORTED_MODULE_11_react___default.a.createElement(ItemComponent, _extends({
         ItemComponent: ItemComponent,
         decorateHandle: decorateHandle,
@@ -7821,7 +7821,7 @@ var ListInput = (_class = (_temp = _class2 = function (_React$Component) {
         onChange: onChange,
         value: value,
         onRemove: removable ? onRemove : __WEBPACK_IMPORTED_MODULE_1_ramda_src_identity___default.a,
-        item: item,
+        item: index,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 148
