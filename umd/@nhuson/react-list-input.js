@@ -1,5 +1,5 @@
 /*!
- * @nhuson/react-list-input v1.2.2
+ * @nhuson/react-list-input v1.2.3
  * ISC Licensed
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -7812,6 +7812,7 @@ var ListInput = (_class = (_temp = _class2 = function (_React$Component) {
 
       var removable = _this2.props.value.length > (_this2.props.minItems || 0);
       var item = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_12_lodash__["invert"])(_this2.props.value);
+      console.log('form son', item, '====');
       return __WEBPACK_IMPORTED_MODULE_11_react___default.a.createElement(ItemComponent, _extends({
         ItemComponent: ItemComponent,
         decorateHandle: decorateHandle,
@@ -7824,7 +7825,7 @@ var ListInput = (_class = (_temp = _class2 = function (_React$Component) {
         item: item,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 148
+          lineNumber: 149
         },
         __self: _this2
       }));
@@ -7873,7 +7874,7 @@ var ListInput = (_class = (_temp = _class2 = function (_React$Component) {
       'div',
       { className: 'list-input-react', __source: {
           fileName: _jsxFileName,
-          lineNumber: 202
+          lineNumber: 203
         },
         __self: this
       },
@@ -7887,7 +7888,7 @@ var ListInput = (_class = (_temp = _class2 = function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 204
+          lineNumber: 205
         },
         __self: this
       }),
@@ -7895,7 +7896,7 @@ var ListInput = (_class = (_temp = _class2 = function (_React$Component) {
         'div',
         { className: 'item-drag-input', __source: {
             fileName: _jsxFileName,
-            lineNumber: 216
+            lineNumber: 217
           },
           __self: this
         },
@@ -7905,7 +7906,7 @@ var ListInput = (_class = (_temp = _class2 = function (_React$Component) {
           Component: this.state.WrappedItemComponent,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 217
+            lineNumber: 218
           },
           __self: this
         })

@@ -198,6 +198,7 @@ var ListInput = (_class = (_temp = _class2 = function (_React$Component) {
 
       var removable = _this2.props.value.length > (_this2.props.minItems || 0);
       var item = invert(_this2.props.value);
+      console.log('form son', item, '====');
       return React.createElement(ItemComponent, _extends({
         ItemComponent: ItemComponent,
         decorateHandle: decorateHandle,
