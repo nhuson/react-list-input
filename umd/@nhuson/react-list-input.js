@@ -1,5 +1,5 @@
 /*!
- * @nhuson/react-list-input v1.1.0
+ * @nhuson/react-list-input v1.2.0
  * ISC Licensed
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -7890,16 +7890,25 @@ var ListInput = (_class = (_temp = _class2 = function (_React$Component) {
         },
         __self: this
       }),
-      value && __WEBPACK_IMPORTED_MODULE_11_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_14_react_drag_sort__["a" /* default */], {
-        collection: this.state.value,
-        onChange: this.changeState,
-        Component: this.state.WrappedItemComponent,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 215
+      value && __WEBPACK_IMPORTED_MODULE_11_react___default.a.createElement(
+        'div',
+        { className: 'item-drag-input', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 215
+          },
+          __self: this
         },
-        __self: this
-      })
+        __WEBPACK_IMPORTED_MODULE_11_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_14_react_drag_sort__["a" /* default */], {
+          collection: this.state.value,
+          onChange: this.changeState,
+          Component: this.state.WrappedItemComponent,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 216
+          },
+          __self: this
+        })
+      )
     );
   };
 

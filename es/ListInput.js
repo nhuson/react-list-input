@@ -261,11 +261,15 @@ var ListInput = (_class = (_temp = _class2 = function (_React$Component) {
           _this3.setState({ stagedValue: stagedValue });
         }
       }),
-      value && React.createElement(Sortable, {
-        collection: this.state.value,
-        onChange: this.changeState,
-        Component: this.state.WrappedItemComponent
-      })
+      value && React.createElement(
+        'div',
+        { className: 'item-drag-input' },
+        React.createElement(Sortable, {
+          collection: this.state.value,
+          onChange: this.changeState,
+          Component: this.state.WrappedItemComponent
+        })
+      )
     );
   };
 

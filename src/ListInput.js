@@ -212,11 +212,13 @@ class ListInput extends React.Component {
         }
 
         { value &&
-          <Sortable
-            collection={this.state.value}
-            onChange={this.changeState}
-            Component={this.state.WrappedItemComponent}
-          />
+          <div className="item-drag-input">
+            <Sortable
+              collection={this.state.value}
+              onChange={this.changeState}
+              Component={this.state.WrappedItemComponent}
+            />
+          </div>
         }
       </div>
     )
