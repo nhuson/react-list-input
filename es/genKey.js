@@ -8,7 +8,7 @@ function idMaker() {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
-          index = 0;
+          index = 1;
 
         case 1:
           if (!true) {

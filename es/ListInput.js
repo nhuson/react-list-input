@@ -197,7 +197,7 @@ var ListInput = (_class = (_temp = _class2 = function (_React$Component) {
           onRemove = _ref2.onRemove;
 
       var removable = _this2.props.value.length > (_this2.props.minItems || 0);
-      console.log(_this2.props.value, '===ssssss');
+      var item = invert(_this2.state.value);
       return React.createElement(ItemComponent, _extends({
         ItemComponent: ItemComponent,
         decorateHandle: decorateHandle,
@@ -206,7 +206,8 @@ var ListInput = (_class = (_temp = _class2 = function (_React$Component) {
         removable: removable,
         onChange: onChange,
         value: value,
-        onRemove: removable ? onRemove : _identity
+        onRemove: removable ? onRemove : _identity,
+        item: item
       }));
     };
   };

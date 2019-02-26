@@ -1,5 +1,5 @@
 /*!
- * @nhuson/react-list-input v1.2.3
+ * @nhuson/react-list-input v1.2.5
  * ISC Licensed
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -7811,7 +7811,7 @@ var ListInput = (_class = (_temp = _class2 = function (_React$Component) {
           onRemove = _ref2.onRemove;
 
       var removable = _this2.props.value.length > (_this2.props.minItems || 0);
-      console.log(_this2.props.value, '===ssssss');
+      var item = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_12_lodash__["invert"])(_this2.state.value);
       return __WEBPACK_IMPORTED_MODULE_11_react___default.a.createElement(ItemComponent, _extends({
         ItemComponent: ItemComponent,
         decorateHandle: decorateHandle,
@@ -7821,6 +7821,7 @@ var ListInput = (_class = (_temp = _class2 = function (_React$Component) {
         onChange: onChange,
         value: value,
         onRemove: removable ? onRemove : __WEBPACK_IMPORTED_MODULE_1_ramda_src_identity___default.a,
+        item: item,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 148
@@ -7872,7 +7873,7 @@ var ListInput = (_class = (_temp = _class2 = function (_React$Component) {
       'div',
       { className: 'list-input-react', __source: {
           fileName: _jsxFileName,
-          lineNumber: 201
+          lineNumber: 202
         },
         __self: this
       },
@@ -7886,7 +7887,7 @@ var ListInput = (_class = (_temp = _class2 = function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 203
+          lineNumber: 204
         },
         __self: this
       }),
@@ -7894,7 +7895,7 @@ var ListInput = (_class = (_temp = _class2 = function (_React$Component) {
         'div',
         { className: 'item-drag-input', __source: {
             fileName: _jsxFileName,
-            lineNumber: 215
+            lineNumber: 216
           },
           __self: this
         },
@@ -7904,7 +7905,7 @@ var ListInput = (_class = (_temp = _class2 = function (_React$Component) {
           Component: this.state.WrappedItemComponent,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 216
+            lineNumber: 217
           },
           __self: this
         })
@@ -7935,7 +7936,7 @@ function idMaker() {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
-          index = 0;
+          index = 1;
 
         case 1:
           if (false) {
